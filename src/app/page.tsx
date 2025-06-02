@@ -3,6 +3,9 @@ import { ChevronRightIcon } from '@heroicons/react/24/outline'
 import Search from '@/components/search'
 import FeaturedGuides from '@/components/FeaturedGuides'
 
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 export default function Home() {
   return (
     <div className="min-h-screen">

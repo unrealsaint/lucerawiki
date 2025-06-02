@@ -10,9 +10,7 @@ const nextConfig = {
   },
   output: 'standalone',
   reactStrictMode: true,
-  // Add trailing slash to ensure proper routing
-  trailingSlash: true,
-  // Ensure proper handling of static files
+  // Remove trailingSlash as it might cause routing issues
   poweredByHeader: false,
   // Enable static optimization
   swcMinify: true,
