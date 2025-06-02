@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-gray-800;
+  }
+
+  body {
+    @apply bg-gray-900 text-gray-100 antialiased;
+  }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-600 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-500;
+}
+
+/* Typography styles */
+.prose {
+  @apply max-w-none;
+}
+
+.prose pre {
+  @apply bg-gray-800 rounded-lg p-4;
+}
+
+.prose code {
+  @apply text-blue-400;
+}
+
+.prose a {
+  @apply text-blue-400 hover:text-blue-300;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4 {
+  @apply text-gray-100;
+}
+
+.prose p, .prose li {
+  @apply text-gray-300;
+}
+
+.prose strong {
+  @apply text-gray-100;
+}
+
+.prose blockquote {
+  @apply border-gray-700 text-gray-300;
+}
+
+.prose hr {
+  @apply border-gray-700;
+}
+
+.prose thead {
+  @apply border-gray-700;
+}
+
+.prose tbody tr {
+  @apply border-gray-800;
+}
+
+/* Layout styles */
+.layout-container {
+  @apply min-h-screen flex flex-col;
+}
+
+.layout-header {
+  @apply sticky top-0 z-50 border-b border-gray-800 bg-gray-900/95 backdrop-blur supports-[backdrop-filter]:bg-gray-900/75;
+}
+
+.layout-content {
+  @apply flex-1;
+}
+
+.layout-sidebar {
+  @apply sticky top-24;
+}
+
+/* Component styles */
+.card {
+  @apply rounded-lg border border-gray-800 bg-gray-800/50 p-6;
+}
+
+.card-hover {
+  @apply hover:bg-gray-700 transition-colors duration-200;
+}
+
+.button {
+  @apply inline-flex items-center rounded-lg px-4 py-2 text-sm font-medium transition-colors duration-200;
+}
+
+.button-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.button-secondary {
+  @apply bg-gray-700 text-gray-100 hover:bg-gray-600;
+}
+
+.input {
+  @apply rounded-lg border border-gray-700 bg-gray-800 px-4 py-2 text-sm text-white placeholder-gray-400 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500;
+} 

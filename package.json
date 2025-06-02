@@ -1,0 +1,49 @@
+{
+  "name": "oasis-lucera-knowledge-base",
+  "version": "0.1.0",
+  "private": true,
+  "bin": "express-server.js",
+  "pkg": {
+    "targets": [
+      "node18-win-x64"
+    ],
+    "outputPath": "dist",
+    "assets": [
+      ".next/**/*",
+      "public/**/*"
+    ]
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "package": "next build && pkg ."
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.4",
+    "@heroicons/react": "^2.2.0",
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^20.11.19",
+    "autoprefixer": "^10.4.17",
+    "express": "^4.18.2",
+    "fuse.js": "^7.0.0",
+    "next": "14.1.0",
+    "next-themes": "^0.4.6",
+    "postcss": "^8.4.35",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-markdown": "^10.1.0",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-highlight": "^7.0.2",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.1",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.57",
+    "@types/react-dom": "^18.2.19",
+    "canvas": "^3.1.0",
+    "typescript": "^5.3.3"
+  }
+}
